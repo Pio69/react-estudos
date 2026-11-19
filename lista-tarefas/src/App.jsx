@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 
 import Tarefa from "./Tarefa";
+import ListaUsuarios from "./ListaUsuarios";
+import BuscaUsuario from "./BuscaUsuario";
 
 function App() {
   const [tarefas, setTarefas] = useState(() => {
@@ -99,6 +101,8 @@ function App() {
         }}
       />
       <button onClick={enviarTarefa}>Adicionar</button>
+      <ListaUsuarios />
+      <BuscaUsuario />
     </div>
   );
 }
